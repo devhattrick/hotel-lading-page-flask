@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Landing Page</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Hotel Name</h1>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Rooms</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <img src="{{ url_for('static', filename='images/hotel.jpg') }}" alt="Hotel">
+        <div class="hero-text">
+            <h2>Welcome to Our Luxury Hotel</h2>
+            <p>Experience the best stay with us.</p>
+            <a href="#" class="btn">Book Now</a>
+        </div>
+    </section>
+
+    <section class="features">
+        <h2>Why Choose Us?</h2>
+        <div class="feature">
+            <h3>Luxury Rooms</h3>
+            <p>Comfortable and spacious rooms with all amenities.</p>
+        </div>
+        <div class="feature">
+            <h3>Excellent Service</h3>
+            <p>Our staff are dedicated to providing the best service.</p>
+        </div>
+        <div class="feature">
+            <h3>Prime Location</h3>
+            <p>Located in the heart of the city, close to attractions.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Hotel Name. All rights reserved.</p>
+    </footer>
+</body>
+</html>
